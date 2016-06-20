@@ -19,12 +19,11 @@ header {
     position: relative;
     height: 203px;
 }
-
 header h1 {
     text-align: center;
     /* padding: 35px; */
     position: relative;
-    font-family: 'Open Sans';
+    font-family: 'Helvetica';
     font-weight: bold;
     top: -158px;
     font-size: 46px;
@@ -35,6 +34,9 @@ header img {
     padding: 15px;
     position: relative;
     top: -6px;
+}
+.navbar-default{
+	border: transparent;
 }
 nav {
 position: relative;
@@ -49,6 +51,10 @@ background: -ms-linear-gradient(top, rgba(30,33,47,1) 0%, rgba(28,39,88,1) 100%)
 background: linear-gradient(to bottom, rgba(30,33,47,1) 0%, rgba(28,39,88,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e212f', endColorstr='#1c2758', GradientType=0 );
 }
+nav ul{
+width: 60%;
+margin: auto;
+}
 .bienvenida {
     padding: 45px;
     text-align: justify;
@@ -57,21 +63,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e212f', end
 .bienvenida h2 {
     color: #fff;
     line-height: 36px;
-    font-family: 'open sans';
+    font-family: 'Helvetica';
     position: relative;
     top: 15px;
 }
-
 .asociados {
     position: relative;
     padding: 45px;
     background: #fff;
 }
-
 .asociados .col-md-4{
 	    width: 33.33333333%;
 }
-
 .asociados img {
 	width: 90%;
 }
@@ -81,47 +84,40 @@ footer {
     padding: 3%;
     color:#fff;
 }
-
 footer .col-md-4 img {
     width: 15px;
     position: relative;
     top: 36px;
-        left: 55px;
+    left: 55px;
 }
-
 footer .row .col-md-4 .horario h3 {
-
     font-size: 15px;
     position: relative;
     text-align: center;
-    font-family: open sans;
+    font-family: 'Helvetica';
 
 }
-
 footer .row .col-md-4 p {
     font-size: 14px;
     position: relative;
 	text-align: center;
-    font-family: open sans;
+    font-family: 'Helvetica';
 }
-
 footer .row .col-md-4 .terminos h2 {
     font-size: 11px;
-    font-family: open sans;
+    font-family: 'Helvetica';
     position: relative;
     text-align: center;
 }
-
 footer .row .col-md-4 p a {
     text-align: center;
     font-size: 11px;
     color: #fff;
 }
-
 footer .row .col-md-4 .correo p {
     font-size: 12px;
     text-align: center;
-    font-family: open sans;
+    font-family: 'Helvetica';
     position: relative;
     top: 19px;
 }
