@@ -37,6 +37,47 @@ header img {
 }
 .navbar-default{
 	border: transparent;
+  margin-bottom: 0;
+}
+.navbar-nav {
+    width: 700px;
+    margin: auto;
+    text-align: center;
+    float: none;
+}
+.navbar-nav > li {
+    float: left;
+    width: 25%;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+ -webkit-transition: all 0.3s ease;
+ -moz-transition: all 0.3s ease;
+ -o-transition: all 0.3s ease;
+ -ms-transition: all 0.3s ease;
+}
+.borde{
+  border-right: 1px solid #202e6f;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: #eee4cc;
+  transition: all 0.3s ease;
+ -webkit-transition: all 0.3s ease;
+ -moz-transition: all 0.3s ease;
+ -o-transition: all 0.3s ease;
+ -ms-transition: all 0.3s ease;
+}
+.navbar-nav > li > a {
+    padding-top: 23px;
+    padding-bottom: 22px;
+    color: #fff;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #eee4cc;
+    background-color: transparent;
 }
 nav {
 position: relative;
@@ -61,7 +102,7 @@ margin: auto;
     height: 400px;
 }
 .bienvenida h2 {
-    color: #fff;
+    color: #eee4cc;
     line-height: 36px;
     font-family: 'Helvetica';
     position: relative;
@@ -88,30 +129,31 @@ footer .col-md-4 img {
     width: 15px;
     position: relative;
     top: 36px;
-    left: 55px;
+    left: 80px;
 }
+
 footer .row .col-md-4 .horario h3 {
-    font-size: 15px;
+    font-size: 16px;
     position: relative;
     text-align: center;
     font-family: 'Helvetica';
 
 }
 footer .row .col-md-4 p {
-    font-size: 14px;
+    font-size: 16px;
     position: relative;
 	text-align: center;
     font-family: 'Helvetica';
 }
 footer .row .col-md-4 .terminos h2 {
-    font-size: 11px;
+    font-size: 13px;
     font-family: 'Helvetica';
     position: relative;
     text-align: center;
 }
 footer .row .col-md-4 p a {
     text-align: center;
-    font-size: 11px;
+    font-size: 12px;
     color: #fff;
 }
 footer .row .col-md-4 .correo p {
