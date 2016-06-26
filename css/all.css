@@ -163,3 +163,52 @@ footer .row .col-md-4 .correo p {
     position: relative;
     top: 19px;
 }
+
+
+.acerca {
+    position: relative;
+    padding: 45px;
+    background: #EEE4CC;
+    height: 800px;
+}
+
+.acerca .row {
+    padding-top: 60px;
+}
+
+.infodr h1{
+    font-family: 'helvetica';
+    font-size: 34px;
+    font-weight: bold;
+    color: #1E2235;
+}
+
+.infodr h2 {
+    font-size: 18px;
+    text-align: justify;
+    color: #1E2235;
+    font-family: 'helvetica';
+}
+
+.bordefoto {
+    padding: 63% 53%;
+    top: 14px;
+    position: absolute;
+    border: rgba(176, 224, 230, 0.38) 1px solid;
+    border-radius: 3px;
+}
+
+.fotodr img {
+    padding-top: 28px;
+    padding-left: 10px;
+}
+
+.col-md-push-6 {
+    left: 0;
+}
+
+.col-md-push-4 {
+    padding: 0;
+    left: 5%;
+    width: 710px;
+}
