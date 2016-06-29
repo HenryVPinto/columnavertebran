@@ -70,6 +70,14 @@ header img {
  -o-transition: all 0.3s ease;
  -ms-transition: all 0.3s ease;
 }
+.navbar-default .navbar-nav > li > a:focus{
+  color: #eee4cc;
+  transition: all 0.3s ease;
+ -webkit-transition: all 0.3s ease;
+ -moz-transition: all 0.3s ease;
+ -o-transition: all 0.3s ease;
+ -ms-transition: all 0.3s ease;
+}
 .navbar-nav > li > a {
     padding-top: 23px;
     padding-bottom: 22px;
