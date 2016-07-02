@@ -6,7 +6,7 @@
 <title>Cl&iacute;nica de Columna Vetebral</title>
 	    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
  <link rel="stylesheet" type="text/css" href="css/all.css">
-  <link rel="stylesheet" type="text/css" href="css/figuras.css">
+ <link rel="stylesheet" type="text/css" href="css/fancybox.css">
  <link rel="stylesheet" type="text/css" href="css/fonts.css">
 </head>
 
@@ -39,6 +39,13 @@
           <ul class="dropdown-menu menu-2">
             <li><a href="acerca.html">Dr. Mario Bran</a></li>
             <li><a href="acerca_sofia.html">Sofia Hernández</a></li>
+          </ul>
+        </li>
+        <li class="dropdown menu-1 borde">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Asociaciones</a>
+          <ul class="dropdown-menu menu-2">
+            <li><a href="nacionales.html">Nacionales</a></li>
+            <li><a href="internacionales.html">Internacionales</a></li>
           </ul>
         </li>
         <li><a href="galeria.html" class="borde">Galer&iacute;a</a></li>
@@ -107,7 +114,7 @@ USA.
 
 internacionales de Columna vertebral, así como coautor de capítulos de
 
-libros de Cirugía de Columna Vertebral Internacionales. Trabajo como
+libros de Cirugía de Columna Vertebral de fama mundial. Trabajo como
 
 miembro del comité de educación médica continua del Hospital Nacional
 
@@ -129,6 +136,8 @@ tecnológicos actuales.
 </div>
 <img src="images/drbran.jpg">
 </div>
+<a href="#" class="view" data-toggle="modal" data-target=".bs-example-modal-lg">Ver Certificaciones</a>
+<a href="cv.pdf" class="view cv">Ver Curriculum</a>
 </div>
 </div>
 </section>
@@ -178,11 +187,90 @@ tecnológicos actuales.
   </div>
   </div>
 </footer>
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      
+      </div>
+      <div class="modal-body">
+     <div class="row">
+       <div class="col-md-6">
+         <div class="img-galery">
+         <a rel="galery" class="fancybox fancybox-title-over" href="images/c1.jpg">
+          <div class="overlay_galery">
+            <img src="images/i_cotizar.svg">
+          </div>
+         </a>
+          <img src="images/c1.jpg">
+          </div>
+       </div>
+       <div class="col-md-6">
 
+         <div class="img-galery">
+         <a rel="galery" class="fancybox fancybox-title-over" href="images/c5.jpg">
+          <div class="overlay_galery">
+            <img src="images/i_cotizar.svg">
+          </div>
+         </a>
+          <img src="images/c5.jpg">
+          </div>
+
+       </div>
+       <div class="col-md-6">
+         <div class="img-galery">
+         <a rel="galery" class="fancybox fancybox-title-over" href="images/c2.jpg">
+          <div class="overlay_galery">
+            <img src="images/i_cotizar.svg">
+          </div>
+         </a>
+          <img src="images/c2.jpg">
+          </div>
+
+
+        </div>
+
+       <div class="col-md-6">
+         <div class="img-galery">
+         <a rel="galery" class="fancybox fancybox-title-over" href="images/c4.jpg">
+          <div class="overlay_galery">
+            <img src="images/i_cotizar.svg">
+          </div>
+         </a>
+          <img src="images/c4.jpg">
+          </div>
+       </div>
+       <div class="col-md-6">
+         <div class="img-galery">
+         <a rel="galery" class="fancybox fancybox-title-over" href="images/c6.jpg">
+          <div class="overlay_galery">
+            <img src="images/i_cotizar.svg">
+          </div>
+         </a>
+          <img src="images/c6.jpg">
+          </div>
+       </div>
+       <div class="col-md-6">
+         <div class="img-galery">
+         <a rel="galery" class="fancybox fancybox-title-over" href="images/c3.jpg">
+          <div class="overlay_galery">
+            <img src="images/i_cotizar.svg">
+          </div>
+         </a>
+          <img src="images/c3.jpg">
+          </div>
+       </div>
+     </div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/fancybox.js"></script>
 <script type="text/javascript">
 
 // Dropdown Menu Fade
@@ -195,4 +283,26 @@ jQuery(document).ready(function(){
 });
 
 </script>
+<script>
+
+
+ $(".fancybox").fancybox({
+   helpers: {
+       title: {
+           type: "over"
+       }
+   },
+   afterShow: function() {
+       var imageWidth = $(".fancybox-image").width();
+       $(".fancybox-title-over-wrap").css({
+           "width": imageWidth,
+           "paddingLeft": 0,
+           "paddingRight": 0,
+           "textAlign": "center"
+       });
+   }
+});
+
+
+ </script>
 </body>
