@@ -6,7 +6,7 @@
 <title>Cl&iacute;nica de Columna Vetebral</title>
 	    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
  <link rel="stylesheet" type="text/css" href="css/all.css">
-  <link rel="stylesheet" type="text/css" href="css/figuras.css">
+ <link rel="stylesheet" type="text/css" href="css/fancybox.css">
  <link rel="stylesheet" type="text/css" href="css/fonts.css">
 </head>
 
@@ -34,7 +34,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="index.html" class="borde">Inicio <span class="sr-only">(current)</span></a></li>
-        <li class="dropdown menu-1 borde active">
+        <li class="dropdown menu-1 borde">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nosotros</a>
           <ul class="dropdown-menu menu-2">
             <li><a href="acerca.html">Dr. Mario Bran</a></li>
@@ -48,62 +48,74 @@
             <li><a href="internacionales.html">Internacionales</a></li>
           </ul>
         </li>
-        <li><a href="galeria.html" class="borde">Galer&iacute;a</a></li>
+        <li class="active"><a href="#" class="borde">Galer&iacute;a</a></li>
         <li><a href="#">Contáctenos</a></li>
 
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
-<section class="acercas">
+<section class="galery">
 <div class="row">
-  <div class="col-md-4 col-md-push-6">
-  <div class="fotodr">
-  <div class="bordefoto">
+  <div class="col-md-4">
+    <div class="img-galery">
+    <a rel="galery" class="fancybox fancybox-title-over" href="images/2.png">
+     <div class="overlay_galery">
+       <img src="images/i_cotizar.svg">
+     </div>
+    </a>
+     <img src="images/2.png">
+     </div>
   </div>
-  <img src="images/sofia.jpg">
+  <div class="col-md-4">
+    <div class="img-galery">
+    <a rel="galery" class="fancybox fancybox-title-over" href="images/3.png">
+     <div class="overlay_galery">
+       <img src="images/i_cotizar.svg">
+     </div>
+    </a>
+     <img src="images/3.png">
+     </div></div>
+  <div class="col-md-4">
+    <div class="img-galery">
+    <a rel="galery" class="fancybox fancybox-title-over" href="images/05.jpg">
+     <div class="overlay_galery">
+       <img src="images/i_cotizar.svg">
+     </div>
+    </a>
+     <img src="images/05.jpg">
+     </div>
   </div>
+
+  <div class="col-md-4">
+    <div class="img-galery">
+    <a rel="galery" class="fancybox fancybox-title-over" href="images/2.png">
+     <div class="overlay_galery">
+       <img src="images/i_cotizar.svg">
+     </div>
+    </a>
+     <img src="images/2.png">
+     </div>
   </div>
-
-<div class="col-md-6 col-md-push-4">
-<div class="infosf">
-<h1> Sofia Irene Hernández L.</h1>
-<h2>Asistente Administrativa</h2>
-<br>
-<p>
-Sofia Hernández es Perito en Administración de Empresas.</p>
-
-<p>
-  Estudio Técnico en Administración de Empresas y actualmente está
-
-cursando el último año en la Licenciatura de Administración de Empresas
-
-de la Universidad Panamericana.
-</p>
-<p>
-  Ha laborado como gerente de ventas en prestigiosas empresas nacionales, en donde se destacó por su profesionalismo,
-
-dedicación y trabajo en equipo.
-</p>
-<p>
-  Una de sus mejores cualidades es el desempeño en atención al cliente, su
-
-proactividad y su sentido servicial hacia las personas.
-</p>
-<p>
-  Sofia domina el idioma ingles y se destaca por la búsqueda de la
-
-excelencia y su deseo de superación por lo que continuara sus estudios de
-
-maestría.
-</p>
-<p>
-  Sera un gusto para Sofia poder atenderle.
-</p>
-</div>
-</div>
-
+  <div class="col-md-4">
+    <div class="img-galery">
+    <a rel="galery" class="fancybox fancybox-title-over" href="images/3.png">
+     <div class="overlay_galery">
+       <img src="images/i_cotizar.svg">
+     </div>
+    </a>
+     <img src="images/3.png">
+     </div></div>
+  <div class="col-md-4">
+    <div class="img-galery">
+    <a rel="galery" class="fancybox fancybox-title-over" href="images/05.jpg">
+     <div class="overlay_galery">
+       <img src="images/i_cotizar.svg">
+     </div>
+    </a>
+     <img src="images/05.jpg">
+     </div>
+  </div>
 </div>
 </section>
 
@@ -157,6 +169,7 @@ maestría.
 
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/fancybox.js"></script>
 <script type="text/javascript">
 
 // Dropdown Menu Fade
@@ -169,4 +182,26 @@ jQuery(document).ready(function(){
 });
 
 </script>
+<script>
+
+
+ $(".fancybox").fancybox({
+   helpers: {
+       title: {
+           type: "over"
+       }
+   },
+   afterShow: function() {
+       var imageWidth = $(".fancybox-image").width();
+       $(".fancybox-title-over-wrap").css({
+           "width": imageWidth,
+           "paddingLeft": 0,
+           "paddingRight": 0,
+           "textAlign": "center"
+       });
+   }
+});
+
+
+ </script>
 </body>
