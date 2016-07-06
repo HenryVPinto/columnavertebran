@@ -100,7 +100,7 @@ background-size: contain;
 }
 
 .fancybox-next span {
-background-image: url(../images/zoom_next.svg);	
+background-image: url(../images/zoom_next.svg);
 z-index: 99 !important;
 visibility: visible !important;
 opacity: 1 !important;
@@ -127,13 +127,13 @@ background-size: contain;
 }
 
 .fancybox-close {
-position: absolute;
-top: 40px;
-right: 10px;
-width: 36px;
-height: 36px;
-cursor: pointer;
-z-index: 8040;
+    position: absolute;
+    top: 0px;
+    right: -50px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    z-index: 8040;
 }
 
 .modal-news .modal-body ul li img{
@@ -217,7 +217,7 @@ height: 300px;
 	overflow: hidden;
 	display: none;
 	z-index: 8010;
-	background: rgba(0,0,0,0.6);
+	background: #1e212f;
 }
 
 .fancybox-overlay-fixed {
@@ -316,7 +316,7 @@ height: 300px;
 
 .fancybox-next {
 	right: -100px;
-	background-image: url(../images/zoom_next.svg);	
+	background-image: url(../images/zoom_next.svg);
 }
 
 .fancybox-close {
