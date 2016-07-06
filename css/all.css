@@ -50,7 +50,7 @@ header img {
 }
 .navbar-nav > li {
     float: left;
-    width: 20%;
+    width: 16.6666666%;
 }
 .navbar-default .navbar-nav > li > a {
     color: #fff;
@@ -89,6 +89,12 @@ header img {
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #eee4cc;
     background-color: transparent;
+}
+.afiliaciones img{
+  border: 1px solid #ccc;
+}
+.afiliaciones .col-md-4{
+  margin-bottom: 50px;
 }
 nav {
 position: relative;
@@ -295,7 +301,7 @@ transition: all 0.3s ease;
 }
 .img-galery {
     padding: 0;
-    height: 396px;
+    height: 345px;
     margin: 0;
     margin-bottom: 30px;
     overflow: hidden;
@@ -307,7 +313,7 @@ transition: all 0.3s ease;
     width: 100%;
     border: 4px solid #1e212f;
     padding-top: 40%;
-    height: 396px;
+    height: 345px;
     text-align: center;
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
@@ -326,11 +332,12 @@ transition: all 0.3s ease;
     left: 0;
 }
 .img-galery img {
-    width: 200%;
+    width: 100%;
     height: auto;
     position: absolute;
     top: 0;
-    left: -45%;
+    left: 0;
+    top: 0;
 }
 .overlay_galery:hover{
 background: rgba(30, 33, 47, 0.7);
@@ -401,6 +408,92 @@ z-index: 1;
 .modal-body .col-md-6 .overlay_galery {
   padding-top: 28%;
 }
+.galery .overlay_galery{
+ padding-top: 27%;
+}
+.body_contacto{
+  background: #EEE4CC;
+  padding: 40px;
+}
+.body_contacto .col-md-12{
+  margin-bottom: 20px;
+}
+.infodr a{
+  color: #1087ea;
+}
+.banner_c img{
+width: 100%;
+}
+.form_body{
+  padding: 20px;
+  -webkit-box-shadow: 3px 3px 0px -1px rgba(0,0,0,0.4);
+-moz-box-shadow: 3px 3px 0px -1px rgba(0,0,0,0.4);
+box-shadow: 3px 3px 0px -1px rgba(0,0,0,0.4);
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.11) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,0.11)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.11) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.11) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.11) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.11) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+}
+#map2{
+  margin-top: 30px;
+  display: inline-block;
+}
+.send-btn{
+text-align: center;
+float: left;
+width: 100%;
+padding: 25px;
+}
+.send-btn button{
+  padding: 12px 40px;
+  border: none;
+  background: rgba(30,33,47,1);
+    border: none;
+    background: -moz-linear-gradient(top, rgba(30,33,47,1) 0%, rgba(28,39,88,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(30,33,47,1)), color-stop(100%, rgba(28,39,88,1)));
+    background: -webkit-linear-gradient(top, rgba(30,33,47,1) 0%, rgba(28,39,88,1) 100%);
+    background: -o-linear-gradient(top, rgba(30,33,47,1) 0%, rgba(28,39,88,1) 100%);
+    background: -ms-linear-gradient(top, rgba(30,33,47,1) 0%, rgba(28,39,88,1) 100%);
+    background: linear-gradient(to bottom, rgba(30,33,47,1) 0%, rgba(28,39,88,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e212f', endColorstr='#1c2758', GradientType=0 );
+    color: #fff;
+}
+.info{
+  text-align: center;
+}
+.body_asociados{
+  background: #EEE4CC;
+padding: 80px 30px;
+text-align: center;
+}
+.body_asociados h1 {
+    font-weight: bold;
+    font-size: 50px;
+    color: #1e212f;
+    margin: 0;
+}
+.body_asociados .col-md-12 p {
+    font-size: 24px;
+    color: #1e212f;
+    font-weight: bold;
+    margin: 60px 0;
+}
+.datos{
+text-align: center;
+padding-top: 20px;
+}
+.body_asociados .col-md-12 .col-md-6:nth-child(1) img{
+width: 90%;
+margin-top: 80px;
+}
+.datos h4{
+  margin-bottom: 30px;
+}
+
 @media (min-width: 320px) and (max-width: 484px){
   .contenedor{
     width: 100%;
