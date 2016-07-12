@@ -15,7 +15,12 @@
 
 <img src="images/logo.png">
 <h1>Clínica Especializada en Columna Vertebral</h1>
+<div class="play_pause">
+  <div id="buttonbar">
+      <button id="play" onclick="audioplay()">&gt;</button>
 
+  </div>
+</div>
 </header>
 
 <nav class="navbar navbar-default">
@@ -211,7 +216,47 @@
 </footer>
 
 </div>
+<audio id="audio1" autoplay loop>
+//  Replace these with your own files.
+     <source src="musica3.mp3" type="audio/mp3" />
+     <source src="musica3.ogg" type="audio/ogg" />
+     HTML5 Audio is required for this example.
+</audio>
+</div>
+<script type="text/javascript">
 
+function audioplay() {
+
+       var audio = document.getElementById("audio1");
+
+       var button = document.getElementById("play");
+
+       if (audio.paused) {
+
+          audio.play();
+
+          button.textContent = "||";
+
+        $(button).addClass("clase_en_play");
+
+        $(button).removeClass("clase_en_pausa");
+
+       } else {
+
+          audio.pause();
+
+          button.textContent = ">";
+
+
+        $(button).removeClass("clase_en_play");
+
+        $(button).addClass("clase_en_pausa");
+
+       }
+
+    }
+
+</script>
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/fancybox.js"></script>
