@@ -916,4 +916,12 @@ padding-top: 27%;
 float: left;
 }
 }
+
+.desarrollado{
+  font-size: 10px !important;
+  color: #ccc;
+}
+.desarrollado a{
+  font-size: 10px !important;
+  color: #ccc !important;
 }
